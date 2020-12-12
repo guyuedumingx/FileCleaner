@@ -3,3 +3,6 @@ rar
 gz
 tar
 iso
+jar
+apk
+exe

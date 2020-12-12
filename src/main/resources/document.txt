@@ -9,3 +9,9 @@ xmind
 html
 chw
 fxml
+md
+cfg
+pptx
+ppt
+azw3
+mobi

@@ -58,7 +58,9 @@ public class IOUtil {
         String fileType = NameUtil.getFileType(file);
         String dirName = DirectoryType.recognitionType(fileType);
         buildDirectory(dirName);
-        tryMove(file, dirName);
+        if(dirName != null) {
+            tryMove(file, dirName);
+        }
     }
 
     private static void tryMove(File file, String dirName) {

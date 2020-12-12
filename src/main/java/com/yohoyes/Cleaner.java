@@ -16,7 +16,7 @@ public class Cleaner extends Application {
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(this.getClass().getClassLoader().getResource("Main.fxml"));
         primaryStage.setTitle("FileCleaner");
-        primaryStage.setScene(new Scene(root, 300, 275));
+        primaryStage.setScene(new Scene(root, 571, 321));
         primaryStage.show();
     }
 
