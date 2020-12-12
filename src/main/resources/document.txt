@@ -1,0 +1,10 @@
+docx
+doc
+txt
+xml
+iml
+pdf
+json
+xmind
+html
+chw
