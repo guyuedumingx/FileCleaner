@@ -1,18 +1,27 @@
 package com.yohoyes;
 
-import com.yohoyes.utils.IOUtil;
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
 
-import java.io.File;
-import java.util.ArrayList;
-import java.util.Iterator;
+/**
+ * 入口
+ * @author yohoyes
+ */
+public class Cleaner extends Application {
 
-public class Cleaner {
+    @Override
+    public void start(Stage primaryStage) throws Exception{
+        Parent root = FXMLLoader.load(this.getClass().getClassLoader().getResource("Main.fxml"));
+        primaryStage.setTitle("FileCleaner");
+        primaryStage.setScene(new Scene(root, 300, 275));
+        primaryStage.show();
+    }
 
     public static void main(String[] args) {
-        ArrayList<File> files = IOUtil.getFiles();
-        Iterator<File> iterator = files.iterator();
-        while (iterator.hasNext()) {
-            IOUtil.move(iterator.next());
-        }
+        launch(args);
     }
+
 }

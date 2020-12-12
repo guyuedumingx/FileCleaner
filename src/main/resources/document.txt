@@ -8,3 +8,4 @@ json
 xmind
 html
 chw
+fxml
